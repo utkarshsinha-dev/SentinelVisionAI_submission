@@ -1,0 +1,19 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.0.3, pluggy-1.6.0 -- C:\Program Files\Python311\python.exe
+cachedir: .pytest_cache
+rootdir: E:\SentinelVisionAI
+plugins: anyio-4.13.0, flaky-3.8.1
+collecting ... collected 10 items
+
+tests/test_deepstream_integration.py::test_multi_person_trajectory_stream PASSED [ 10%]
+tests/test_deepstream_integration.py::test_malformed_metadata_handling PASSED [ 20%]
+tests/test_deepstream_integration.py::test_occupancy_cooldown_and_jsonl_persistence PASSED [ 30%]
+tests/test_deepstream_integration.py::test_multiple_untracked_entities_distinct_locations PASSED [ 40%]
+tests/test_deepstream_integration.py::test_stream_consumer_cli_integration PASSED [ 50%]
+tests/test_deepstream_integration.py::test_real_pipegen_metadata_end_to_end PASSED [ 60%]
+tests/test_deepstream_integration.py::test_repaired_demo_video_motion_and_integrity PASSED [ 70%]
+tests/test_zone_monitor.py::test_point_in_polygon PASSED                 [ 80%]
+tests/test_zone_monitor.py::test_zone_monitor PASSED                     [ 90%]
+tests/test_zone_monitor.py::test_deepstream_adapter PASSED               [100%]
+
+============================= 10 passed in 29.47s =============================

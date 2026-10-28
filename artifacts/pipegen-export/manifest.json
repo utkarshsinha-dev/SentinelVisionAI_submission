@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "project_name": "Restricted Zone People Tracking Pipeline",
+  "project_id": "706e5afb-c4ad-4959-b668-81c1a029663d",
+  "pipegen_version": "0.5.1",
+  "exported_at": "2026-10-15T16:06:51Z",
+  "origin": {
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "trt": "10.3.0",
+    "arch": "x86_64",
+    "image": "craftifaidocker/deepstream:7.1-amd64-v3",
+    "gpu_slug": "nvidia-geforce-rtx-4060-laptop-gpu"
+  },
+  "models": [
+    {
+      "name": "yolo11s",
+      "onnx": "models/yolo11s.onnx",
+      "plan": "models/yolo11s.fp32.plan",
+      "precision": "fp32",
+      "workspace_mb": 1024,
+      "builder_optimization_level": 3,
+      "origin_builder_optimization_level": 0,
+      "onnx_sha256": "f8d06a921024c1a46091d48a59a8e377ba189f14250df167fe82f408ca37814b",
+      "plan_sha256": "de7014ef1fd1dde64ec8491198536feb9ac8bec94e8dbc768a9348a8a3d578e2",
+      "engine_bytes": 47789348,
+      "layer_count": 243
+    }
+  ],
+  "io": {
+    "default_input_kind": "file",
+    "default_input": "sample_office.mp4",
+    "supported_inputs": [
+      "file",
+      "rtsp"
+    ],
+    "input_required": true,
+    "output_dir": "out",
+    "has_display_sink": true
+  },
+  "warnings": [
+    "the pipeline read sample_office.mp4, which lives outside the project and cannot be shipped \u2014 the recipient must pass --input"
+  ]
+}

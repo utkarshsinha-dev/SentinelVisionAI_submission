@@ -1,0 +1,24 @@
+SENTINEL VISION AI — VERIFIED PIPELINE RESULTS
+Date: 2026-10-15
+
+Pipeline:
+- PipeGen full pipeline compilation: successful
+- TensorRT engine: yolo11s.fp32.plan
+- Engine size: 47,789,348 bytes
+- Pipeline IR: PipelineIR.json
+- Latency trace: artifacts/logs/gst_latency_trace.log
+
+Video metadata:
+- Frames processed: 163
+- Frames with person detections: 160
+- Person detection records: 320
+- Unique tracker IDs: 2
+- Mean detection confidence: 0.6023
+- Video dimensions: 1728x1080
+- Metadata source field: empty
+
+Limitations:
+- These figures describe the available sample-video run, not general model accuracy.
+- Restricted-zone ENTRY/OCCUPANCY/EXIT events are not yet verified.
+- End-to-end latency, FPS, power and thermal measurements are not established here.
+- Existing test results must be attached separately.
